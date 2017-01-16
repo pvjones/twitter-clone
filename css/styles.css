@@ -129,6 +129,7 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			opacity: 0;
 		}
 			#tweet-controls div {
 				display: inline-block;
@@ -168,7 +169,15 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		opacity: 0;
+		transition: 500ms;
 	}
+
+	.tweet:hover .tweet-actions {
+		opacity: 1;
+		transition: 500ms;
+	}
+
 		.tweet-actions ul {
 			list-style-type: none;
 		}
@@ -212,6 +221,11 @@ body {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
 	}
+
+	.stats, .reply {
+		
+	}
+
 		.stats, .stats div {
 			box-sizing: border-box;
 		}
